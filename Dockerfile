@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # as per https://github.com/docker/docker/issues/783#issuecomment-56013588
 # install nodejs and globally install some modules to speed up rebuilds
 RUN echo 'LANG="en_GB.UTF-8"' > /etc/default/locale && locale-gen en_GB.UTF-8 \
-  && dpkg-reconfigure locales
+  && dpkg-reconfigure locales \
   && apt-get install software-properties-common -y \
   && add-apt-repository ppa:evarlast/golang1.4 \
   && apt-get update \
@@ -35,4 +35,5 @@ RUN echo 'LANG="en_GB.UTF-8"' > /etc/default/locale && locale-gen en_GB.UTF-8 \
     chai \
     supertest \
     tmp \
-    pegjs
+    pegjs \
+
