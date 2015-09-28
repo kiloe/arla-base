@@ -1,0 +1,13 @@
+diff --git a/include/v8config.h b/include/v8config.h
+index fabf13b..e82a201 100644
+--- a/include/v8config.h
++++ b/include/v8config.h
+@@ -136,7 +136,7 @@
+ #elif defined(__BIONIC__)
+ # define V8_LIBC_BIONIC 1
+ # define V8_LIBC_BSD 1
+-#elif defined(__GLIBC__) || defined(__GNU_LIBRARY__)
++#elif defined(__GLIBC_NO__) || defined(__GNU_LIBRARY_NO__)
+ # define V8_LIBC_GLIBC 1
+ #else
+ # define V8_LIBC_BSD V8_OS_BSD

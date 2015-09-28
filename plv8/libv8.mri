@@ -1,0 +1,8 @@
+create libv8.a
+addlib build/v8-git-mirror-4.3.66/out/native/obj.target/tools/gyp/libv8_nosnapshot.a
+addlib build/v8-git-mirror-4.3.66/out/native/obj.target/tools/gyp/libv8_base.a
+addlib build/v8-git-mirror-4.3.66/out/native/obj.target/tools/gyp/libv8_snapshot.a
+addlib build/v8-git-mirror-4.3.66/out/native/obj.target/tools/gyp/libv8_libplatform.a
+addlib build/v8-git-mirror-4.3.66/out/native/obj.target/tools/gyp/libv8_libbase.a
+save
+end
